@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <style media="screen">
+      body{
+        background-color:#ccc;
+        background-image: url(./img/anokhi.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+      }
+      *{
+        color:#7f5af0;
+      }
+      nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 0px 25px;
+      }
+      nav ul li a{
+        color: black;
+        text-decoration:none;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+      .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <nav>
+    <ul style="margin-left:900px;margin-top:50px;font-size:150%;">
+      <li><a href="#">Home</a></li>
+      <li><a href="About.html">Competitions</a></li>
+      <li><a href="participate.html">Participate</a></li>
+    </ul>
+</nav>
+    <h1 style="text-align:center;margin-top:100px;">Register Here:</h1><br>
+    <label style="font-size:20px" for="">First Name:   </label>
+    <input type="text" name="Name" value=""><br>
+<br>
+    <label style="font-size:20px" for="">Last Name:   </label>
+
+    <input type="text" name="Name" value=""><br>
+    <br>
+
+    <br>
+    <p style="font-size:20px">Gender :</p><br>
+    <input style="margin-left:15px;margin-top:-10px;" type="radio" id="age1" name="age">
+<label for="M">Male</label><br>
+<input style="margin-left:15px" type="radio" id="age2" name="age">
+<label for="F">Female</label><br>
+<input style="margin-left:15px" type="radio" id="age3" name="age">
+<label for="N">Non-Binary</label><br>
+<br>
+
+<label style="margin-left:2px;font-size:20px;" for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+  <br>
+  <br>
+<p style="font-size:20px">Do you want to recieve frequent updates through mail??</p>
+  <label class="switch">
+    <input type="checkbox" checked>
+    <span class="slider round"></span>
+  </label><br><br>
+  <label style="font-size:20px" for="">Give your valuable feedback:   <br><br></label>
+  <textarea name="Address" rows="8" cols="80"></textarea><br>
+  <br>
+  <label for="cars" style="font-size:20px">Choose Your Department:<br><br></label>
+  <select name="cars" id="cars" style="margin-left:5px;">
+    <option value="volvo">EEE</option>
+    <option value="saab">CYS</option>
+    <option value="opel">CSE</option>
+    <option value="audi">ECE</option>
+  </select>
+  <br><br>
+  <p style="font-size:20px;">Choose year of Study: </p>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> 2019-2023</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2"> 2020-2024</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3"> 2021-2025</label><br>
+<br>
+<p></p>
+<input onclick="myFunction()" type="submit" value="Submit" style="margin-left:660px;font-size:30px;">
+<script>
+function myFunction() {
+  alert("Your submission has been recorded");
+}
+</script>
+  </body>
+</html>
