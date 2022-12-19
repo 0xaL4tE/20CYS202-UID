@@ -1,0 +1,133 @@
+<html>
+    <head><title>Competitions</title></head>
+    <style>
+*{          
+  
+  color: black;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+}
+body{
+  background-color: #2E3544;
+
+background-repeat: no-repeat;
+background-size: contain;
+
+}
+ul{
+  list-style-type: none;
+}
+li{
+  display: inline-block;
+}
+
+.underline {
+display: inline-block;
+position: relative;
+}
+
+.underline::after {
+content: '';
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 2px;
+bottom: 0;
+left: 0;
+background-color: #d8b139;
+transform-origin: bottom right;
+transition: transform 0.25s ease-out;
+}
+
+.underline:hover::after {
+transform: scaleX(1);
+transform-origin: bottom left;
+color:#F1F6F5;
+}
+.header{
+margin-left: 50px;
+
+}
+.box1{
+
+width: 350px;
+height: 70px;
+float: left;
+transition: transform .2s;
+margin-left:px;
+box-shadow: -15px -15px 15px rgba(96, 90, 90, 0.2),
+            15px 15px 15px rgba(73, 69, 69, 0.2);
+
+}
+.box1:hover{
+ transform: scale(1.05);
+ 
+}
+    </style>
+<script>
+    var countDownDate = new Date("Feb 5, 2023 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+<body style="color:#2E3544">
+    <a><img src="../img/amritalogo2.png" alt="Amrita" style="margin-top: 50px;margin-left:40px;width:250px;"></a>
+        <div class="header" style="margin-top: 50px;">
+            <ul style="margin-top:-95px;margin-left:905px;font-size:20px;">
+                <a href="../index.html"><li  class="underline" style="color: white">HOME&nbsp</li></a>
+                <a href="competitions.html"><li  class="underline" style="color: white;">COMPETITIONS&nbsp </li></a>
+                <a href="signup.html"><li  class="underline" style="color: white;">SIGN IN&nbsp </li></a>
+                <a href="Register1.html"><li  class="underline" style="color: white;">REGISTER&nbsp </li></a>
+      
+            </ul>
+            
+        </div>
+        <div>
+            <p style="font-size: 300%;margin-left:250px;margin-top:100px;color:#d8b139">Time Left Before Competitions Start: </p>
+        <p id="demo" style="font-size:400%;margin-left:500px;color:aliceblue"></p>
+
+        </div>
+        <div style="width:1000px;">
+            <h1 style="text-decoration: underline;margin-left:550px;font-size:400%;color:#d8b139">Competitions</h1>
+            <p style="margin-left:200px;font-size:50px;color:#d8b139">Hackathon:</p><br>
+            <p style="margin-left:200px;color:aliceblue">A hackathon (also known as a hack day, hackfest, datathon or codefest; a portmanteau of hacking and marathon) is an event where people engage in rapid and collaborative engineering over a relatively short period of time such as 24 or 48 hours. They are often run using agile software development practices, such as sprint-like design wherein computer programmers and others involved in software development, including graphic designers, interface designers, product managers, project managers, domain experts, and others collaborate intensively on engineering projects, such as software engineering.</p>
+            <p style="margin-left:200px;font-size:50px;color:#d8b139">CTF:</p><br>
+            <p style="margin-left:200px;color:aliceblue">Capture the Flag (CTF) in computer security is an exercise in which "flags" are secretly hidden in purposefully-vulnerable programs or websites. It can either be for competitive or educational purposes. Competitors steal flags either from other competitors (attack/defense-style CTFs) or from the organizers (jeopardy-style challenges). Several variations exist. Competitions can including hiding flags in hardware devices, they can be both online or in-person, and can be advanced or entry-level. The game is based on the traditional outdoor sport of the same name.</p>
+            
+            <p style="margin-left:200px;font-size:50px;color:#d8b139;">Elocution:</p><br>
+            <p style="margin-left:200px;color:aliceblue">Elocution is the study of formal speaking in pronunciation, grammar, style, and tone as well as the idea and practice of effective speech and its forms. It stems from the idea that while communication is symbolic, sounds are final and compelling. It came into popularity in England in the eighteenth and nineteenth centuries and in America during the nineteenth century. It benefitted both men and women in different ways but overall the concept was there to teach both how to become better, more persuasive speakers, standardize errors in spoken and written English, as well as the beginnings of the formulation of argument were discussed here.</p>
+            
+            <p style="margin-left:200px;font-size:50px;color:#d8b139;">Debate:</p><br>
+            <p style="margin-left:200px;color:aliceblue">Debate is a process that involves formal discourse on a particular topic, often including a moderator and audience. In a debate, arguments are put forward for often opposing viewpoints. Debates have historically occurred in public meetings, academic institutions, debate halls, coffeehouses, competitions, and legislative assemblies. Debate has also been conducted for educational and recreational purposes, usually associated with educational establishments and debating societies. These debates put an emphasis upon logical consistency, factual accuracy, and emotional appeal to an audience.[citation needed] Modern forms of competitive debate also include rules for participants to discuss and decide upon the framework of the debate (how the debate will be judged).</p>
+        </div>
+        <a href="Register1.html">
+            <div class="box1" style="border-radius: 25px;margin-left:550px;background-color:#3db1b7;">
+                <h3 style="margin-left:65px;font-size:195%;margin-top:15px;">Register Here</h3>
+                
+                
+                </div><br><br>
+</body>
+</html>
