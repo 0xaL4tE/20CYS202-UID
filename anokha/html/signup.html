@@ -334,35 +334,50 @@ font-weight: 700;
 if(fnam==""){
   fnm.textContent="Enter Firstname";
   event.preventDefault();
-  i=i+1;
+}
+else{
+  i+=1;
 }
   if(lnam==""){
     lnm.textContent="Enter Lastname";
     event.preventDefault();
+}
+else{
+  i+=1;
 }
 
   if(!email.match(mat)){
         em.textContent="Enter valid Email";
 
     }
+    else{
+  i+=1;
+}
     
   if(!phno.match(phh)){
       ph.textContent="Enter valid Phone Number";
       event.preventDefault();
     }
+    else{
+  i+=1;
+}
   if(pwd==""){
-    if(pwd.length<8 && pwd.length>24){
+    pw.textContent="Enter Password";
+    event.preventDefault();
+  }
+   if(pwd.length < 8 || pwd.length > 24){
       pw.textContent="Password too long or too short"; 
       event.preventDefault(); 
-      i=i+1;   
-    }}
-    
-    
-else{
-  alert("Submission recorded");
-}
 
-  }
+    }
+    else{ 
+  i+=1;
+}
+if(i==5){
+      alert("Submission successful");
+   }
+    }
+    
   
 </script>
 <body>
