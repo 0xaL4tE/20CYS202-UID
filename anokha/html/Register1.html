@@ -32,6 +32,10 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+function func(){
+    alert("Thank you for registering");
+    location.reload();
+}
 </script>
 </head>
     <style>
@@ -158,7 +162,6 @@ box-shadow: -15px -15px 15px rgba(96, 90, 90, 0.2),
     <div id="section2" style="margin-top:600px;" class="box23">
         <h1 style="margin-left:600px;font-size: 50px;;">REGISTRATION</h1>
             <div class="box2" style="background-color: 3db1b7;border-radius:25px;margin-left:570px;">
-                <h3 style="font-size:120%;margin-left:15px;">Competitions: </h3>
                 <h3 style="font-size:220%;margin-left:15px;">Competitions: </h3>
                 <form>
                     <input type="checkbox" id="vehicle1" name="vehicle1" value="hackathon" style="margin-left:15px;">
@@ -172,6 +175,7 @@ box-shadow: -15px -15px 15px rgba(96, 90, 90, 0.2),
                     <input type="checkbox" id="vehicle3" name="vehicle3" value="debate" style="margin-left:15px;">
                     <label for="vehicle3"> Debate</label><br>
                   </form>
+                  <input type="submit" onclick="func()" style="margin-left:150px;font-size:25px;color:black;background-color:#d8b139;margin-top:50px;">
             </div>
         
 
