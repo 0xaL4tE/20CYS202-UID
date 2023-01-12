@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <title>Document</title>
+    
+<style>
+    *{
+            font-family: 'Roboto Mono', monospace;
+            font-weight: bold;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            display: inline-block;
+        }
+        .header{
+    margin-left: 50px;
+    margin-top:50px;
+        }
+    .underline {
+  display: inline-block;
+  position: relative;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #6358DC;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color:#6358DC;
+}
+#Histogram{
+    width:80%;
+    max-width:500px;
+    margin-left:150px;
+    margin-top:30px;
+}
+.month{
+    margin-top:80px;
+    font-size:30px;
+    margin-left:240px;
+    
+}
+#pieChart{
+    width:80%;
+    max-width:350px;
+    margin-left:950px;
+    margin-top:40px;
+}
+</style>
+</head>
+<body>
+    <div class="header" >
+        <img src="../images/Frame 10149.png" alt="" style="width:257px">
+        <ul style="margin-top:-55px;margin-left:900px;font-size:20px;">
+            <a href="../index.html"><li class="underline" style="color: #6358DC;">HOME&nbsp</li></a>
+            <a href=""><li class="underline" style="color: #6358DC;"> ABOUT&nbsp </li></a>
+            <a href="activity.html"><li class="underline" style="color: #6358DC;">ACTIVITY&nbsp </li></a>
+            <a href="Premium.html"><li class="underline" style="color: #6358DC;">PRICING&nbsp </li></a>
+            <a href="profile.html"><li class="underline" style="color: #6358DC;">PROFILE</li></a>
+        </ul>
+    </div>
+    <div>
+    <p class="month">Number of Searches <br><span style="margin-left:-55px;">made in the last 5 months</span></p><br><br><br>
+    <canvas id="Histogram"></canvas>
+</div>
+<div>
+    <p class="month" style="margin-left:950px;margin-top:-438.9px;">Different Entities<br><span style="margin-left:-55px;">that you recently searched</span></p>
+    <canvas id="pieChart"></canvas>
+</div>
+
+    <script>
+        
+        var xValues = ["August", "September", "October", "November", "December"];
+var yValues = [4, 19, 10, 12, 15];
+var barColors = ["red", "green","blue","orange","brown"];
+
+new Chart("Histogram", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero: true
+            }
+        }]
+    },
+    
+    legend :{
+        display : false
+    }
+}
+  
+  });
+
+
+  var xValues = ["Images", "Videos", "Articles", "Audios", "Applications"];
+var yValues = [15, 8, 14, 9, 5];
+var barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145"
+];
+
+new Chart("pieChart", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true
+    },
+    
+    
+  }
+});
+        </script>
+   
+  </body>>
+</html>
+
