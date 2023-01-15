@@ -1,0 +1,227 @@
+<html>
+
+<head>
+    <title>
+        Register Here
+    </title>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 25, 2023 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+        function func() {
+            var g = document.getElementById("vehicle1").required;
+            document.getElementById("helo").innerHTML = g;
+            alert("Thank you for registering");
+            location.reload();
+        }
+    </script>
+</head>
+<style>
+    * {
+
+        color: white;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: bold;
+    }
+
+    body {
+        background-color: #2E3544;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    .box {
+            background-color: #3db1b7;
+            margin-left: 300px;
+            width: 900px;
+            height: 500px;
+            border: 0px;
+            border-radius: 25px;
+            border: solid white;
+            margin: 0px auto;
+            margin-left: 170px;
+        }
+        .underline {
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+
+        display: inline-block;
+        padding: 5px 0px;
+        position: relative;
+    }
+
+    .underline::after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: inline-block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #d8b139;
+        transition: width 0.2s ease 0s, left 0.2s ease 0s;
+        width: 0;
+    }
+
+    .underline:hover::after {
+        width: 100%;
+        left: 0;
+    }
+
+    .header {
+        margin-left: 50px;
+
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .box {
+
+        width: 2000px;
+        height: 500px;
+        border: 1px;
+        border: solid white;
+        margin: 0px auto;
+        margin-left: 170px;
+    }
+
+    .box1 {
+
+        width: 200px;
+        height: 70px;
+        float: left;
+        transition: transform .2s;
+        margin-left: px;
+        box-shadow: -15px -15px 15px rgba(96, 90, 90, 0.2),
+            15px 15px 15px rgba(73, 69, 69, 0.2);
+
+    }
+
+    .box1:hover {
+        transform: scale(1.05);
+
+    }
+
+    .box23 {
+        width: 500px;
+        height: 700px;
+    }
+
+    .box2 {
+
+        width: 400px;
+        height: 400px;
+        float: left;
+        transition: transform .2s;
+        margin-left: px;
+        box-shadow: -15px -15px 15px rgba(96, 90, 90, 0.2),
+            15px 15px 15px rgba(73, 69, 69, 0.2);
+
+    }
+</style>
+
+<body>
+    <a><img src="../img/amritalogo2.png" alt="Amrita" style="margin-top: 40px;margin-left:40px;width:270px;"></a>
+    <div class="header" style="margin-top: 50px;">
+        <ul style="margin-top:-95px;margin-left:800px;font-size:17.5px;">
+          <a style="text-decoration: none;" href="../index.html">
+            <li class="underline" style="color: white">HOME &nbsp</li>
+          </a>
+          <a style="text-decoration: none;" href="competitions.html">
+            <li class="underline" style="color: white;">COMPETITIONS&nbsp</li>
+          </a>
+          <a style="text-decoration: none;" href="signup.html">
+            <li class="underline" style="color: white;">SIGN-IN&nbsp</li>
+          </a>
+          <a style="text-decoration: none;" href="Register1.html">
+            <li class="underline" style="color: white;">REGISTER&nbsp</li>
+          </a>
+          <a style="text-decoration: none;" href="Contactus.html">
+            <li class="underline" style="color: white;">Contact&nbsp</li>
+        </a>
+        <a style="text-decoration: none;" href="gallery.html">
+          <li class="underline" style="color: white;">Gallery</li>
+      </a>
+    
+        </ul>
+    
+      </div>
+    <p style="font-size: 300%;margin-left:250px;margin-top:150px;color:#d8b139">Time Left Before Registration Closes:
+    </p>
+    <p id="demo" style="font-size:400%;margin-left:500px;"></p>
+    <div style="margin-left:450px;">
+        <a href="#section2">
+            <div class="box1" style="border-radius: 25px;margin-left:50px;background-color:#3db1b7">
+                <h3 style="margin-left:30px;font-size:195%;margin-top:15px;">Register</h3>
+
+            </div>
+        </a><a href="signup.html">
+            <div class="box1" style="border-radius: 25px;margin-left:50px;background-color:#3db1b7">
+                <h3 style="margin-left:45px;font-size:195%;margin-top:15px;">SignUp</h3>
+            </div>
+        </a>
+    </div>
+
+
+</body>
+<div id="section2" style="margin-top:600px;" class="box23">
+    <h1 style="margin-left:600px;font-size: 50px;;">REGISTRATION</h1>
+    <div class="box2" style="background-color: 3db1b7;border-radius:25px;margin-left:570px;">
+        <h3 style="font-size:220%;margin-left:15px;">Competitions: </h3>
+        <form>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="hackathon" style="margin-left:15px;" required>
+            <label for="vehicle1"> Hackathon</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="ctf" style="margin-left:15px;" required>
+            <label for="vehicle2"> CTF</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="quiz" style="margin-left:15px;" required>
+            <label for="vehicle3"> Quiz</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="elocution" style="margin-left:15px;" required>
+            <label for="vehicle3"> Elocution</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="debate" style="margin-left:15px;" required>
+            <label for="vehicle3"> Debate</label><br>
+        </form>
+        <p id="helo" style="margin-left:60px;">Please Choose one option!!!</p>
+        <input type="submit" onclick="func()"
+            style="margin-left:150px;font-size:25px;color:black;background-color:#d8b139;margin-top:50px;">
+    </div>
+</div>
+
+</html>

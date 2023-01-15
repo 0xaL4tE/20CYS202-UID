@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+
+color: black;
+font-family: 'Roboto Mono', monospace;
+font-weight: bold;
+margin:0px;
+padding:0%;
+}
+
+body {
+background-color: #2E3544;
+
+background-repeat: no-repeat;
+background-size: contain;
+
+}
+
+ul {
+list-style-type: none;
+}
+
+li {
+display: inline-block;
+}
+    col{
+        max-width: 25%;
+        padding: 0px 4px;
+        flex: 25%;
+      }    
+      .row{
+        padding: 0px 20px;
+}
+.underline {
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+
+        display: inline-block;
+        padding: 5px 0px;
+        position: relative;
+    }
+
+    .underline::after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: inline-block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #d8b139;
+        transition: width 0.2s ease 0s, left 0.2s ease 0s;
+        width: 0;
+    }
+
+    .underline:hover::after {
+        width: 100%;
+        left: 0;
+    }
+</style>
+</head>
+<body>
+    <a><img src="../img/amritalogo2.png" alt="Amrita" style="margin-top: 50px;margin-left:40px;width:270px;"></a>
+    <div class="header" style="margin-top: 50px;">
+      <ul style="margin-top:-95px;margin-left:875px;font-size:17.5px;">
+        <a style="text-decoration: none;" href="../index.html">
+          <li class="underline" style="color: white">HOME &nbsp</li>
+        </a>
+        <a style="text-decoration: none;" href="competitions.html">
+          <li class="underline" style="color: white;">COMPETITIONS&nbsp</li>
+        </a>
+        <a style="text-decoration: none;" href="signup.html">
+          <li class="underline" style="color: white;">SIGN-IN&nbsp</li>
+        </a>
+        <a style="text-decoration: none;" href="Register1.html">
+          <li class="underline" style="color: white;">REGISTER&nbsp</li>
+        </a>
+        <a style="text-decoration: none;" href="Contactus.html">
+          <li class="underline" style="color: white;">Contact&nbsp</li>
+      </a>
+      <a style="text-decoration: none;" href="gallery.html">
+        <li class="underline" style="color: white;">Gallery</li>
+    </a>
+  
+      </ul>
+  
+    </div>
+    <h1 style="font-size:50px;color:aliceblue;margin-left:650px;margin-top:150px;">Gallery</h1>
+    <div class="row">
+        <div class="col" style="width:1300px;display:inline">
+          <img src="../img/campus.jpg" style="width: 505px;height:323px;margin-left:250px;margin-top:120px;border-radius:3px;">
+          <img src="../img/Anokha2.jpg" style="width: 505px;height:323px;border-radius:3px;margin-left:50px;">
+          <img src="../img/anokha2018.png" style="width: 505px;height:323px;margin-left:250px;margin-top:50px;border-radius:3px;">
+          <img src="../img/anokha20182.png" style="width: 505px;height:323px;border-radius:3px;margin-left:50px;">
+          <img src="../img/anokha201818.jpg" style="width: 505px;height:323px;border-radius:3px;margin-left:250px;margin-top:50px;">
+          <img src="../img/anokha201824.jpg" style="width: 505px;height:323px;border-radius:3px;margin-left:50px;">
+        </div>
+        
+        
+        </div>
+</body>
+</html>
